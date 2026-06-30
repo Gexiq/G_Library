@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>GB Reader</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+iframe{
+
+width:100%;
+
+height:100vh;
+
+border:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<iframe id="reader"></iframe>
+
+<script>
+
+const params=new URLSearchParams(location.search);
+
+const book=params.get("book");
+
+document.getElementById("reader").src=book;
+
+</script>
+
+</body>
+
+</html>
